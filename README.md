@@ -6,3 +6,8 @@
 ### 🕵️‍♂️ P1) Write an application asks the user for memory in kilobytes and it in kilobytes, bytes, and bits at the standered output stream.
 
 ### 🕵️‍♂️ P2) Write a simple program which prints the size of int, float, double, char and boolen data types in standered output stream.
+
+
+### 🕵️‍♂️ P3) Write a program takes a character from the user, then prints the ascii representation of it in the standered out stream
+
+### 🕵️‍♂️ P4) Write a program takes a number from the user, then prints the ascii character of it in the standered output stream
