@@ -15,3 +15,5 @@
 ### 🕵️‍♂️ P5) Write a program takes a number from the user, then it prints the number is even or odd in the standered output stream
 
 ### 🕵️‍♂️ P6) Write a program takes 3 numbers from user, then prints the greatest one in the standered output stream
+
+### 🕵️‍♂️ P7) Write a program which check for the user's rank. if he is in range of [0 - 500], i.e he is not bad, [500 - 1000], i.e he is above average, [ > 1000], i.e he is awasome
