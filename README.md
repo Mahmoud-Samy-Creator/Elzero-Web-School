@@ -17,3 +17,5 @@
 ### 🕵️‍♂️ P6) Write a program takes 3 numbers from user, then prints the greatest one in the standered output stream
 
 ### 🕵️‍♂️ P7) Write a program which check for the user's rank. if he is in range of [0 - 500], i.e he is not bad, [500 - 1000], i.e he is above average, [ > 1000], i.e he is awasome
+
+### 🕵️‍♂️ P7) Write a program that simulate a simple calculator that performs the operations, +, -, *, /. You can perform only a function of 2 numbers.
