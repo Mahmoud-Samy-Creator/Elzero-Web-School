@@ -24,6 +24,12 @@ int main(void)
             cout << "Number " << num << "is odd\n";
         }
 
+        /*
+        else if(num == 99)
+        {
+            break;
+        }
+        */
         else
         {
             cout << "You did not entered a number";
