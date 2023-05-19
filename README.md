@@ -11,3 +11,5 @@
 ### 🕵️‍♂️ P3) Write a program takes a character from the user, then prints the ascii representation of it in the standered out stream
 
 ### 🕵️‍♂️ P4) Write a program takes a number from the user, then prints the ascii character of it in the standered output stream
+
+### 🕵️‍♂️ P5) Write a program takes a number from the user, then it prints the number is even or odd in the standered output stream
