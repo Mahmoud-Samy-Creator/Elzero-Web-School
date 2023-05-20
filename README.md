@@ -19,3 +19,8 @@
 ### 🕵️‍♂️ P7) Write a program which check for the user's rank. if he is in range of [0 - 500], i.e he is not bad, [500 - 1000], i.e he is above average, [ > 1000], i.e he is awasome
 
 ### 🕵️‍♂️ P7) Write a program that simulate a simple calculator that performs the operations, +, -, *, /. You can perform only a function of 2 numbers.
+
+### 🕵️‍♂️ P8) Write a program of award system, the user enters a number between [1, 2, 3, 4], and the system gives him the gift according to the number
+
+### 🕵️‍♂️ P9) Write a program of discount system based on no. of year experirence
+
