@@ -23,4 +23,5 @@
 ### 🕵️‍♂️ P8) Write a program of award system, the user enters a number between [1, 2, 3, 4], and the system gives him the gift according to the number
 
 ### 🕵️‍♂️ P9) Write a program of discount system based on no. of year experirence
+### 🕵️‍♂️ P10) Write a program to print the even elements of an integer array
 
