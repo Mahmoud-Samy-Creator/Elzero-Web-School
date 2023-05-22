@@ -1,13 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int main(void)
+int main()
 {
     int num;
 
     cout << "=== Enter a number to check ===\n";
     cout << "===== If it is even or odd =====\n";
-    cout << "==== Enter 0000 to stop ====\n";
 
     cin >> num;
 
@@ -30,6 +29,7 @@ int main(void)
             break;
         }
         */
+
         else
         {
             cout << "You did not entered a number";
@@ -37,4 +37,6 @@ int main(void)
 
         cin >> num;
     }
+
+    return 0;
 }
