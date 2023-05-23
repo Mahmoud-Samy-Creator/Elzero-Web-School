@@ -8,10 +8,10 @@ int main()
     char c = '%';
     char d = 'A';
 
-    cout << int(a) << endl;
-    cout << int(b) << endl;
-    cout << int(c) << endl;
-    cout << int(d) << endl;
+    cout << "ASCII Value of ~ " << int(a) << endl;
+    cout << "ASCII Value of & " << int(b) << endl;
+    cout << "ASCII Value of % " << int(c) << endl;
+    cout << "ASCII Value of A " << int(d) << endl;
 }
 
 
