@@ -20,8 +20,6 @@ int main()
             break;
         case 4:
             cout << "Gift(4)";
-            break;
-
+            break; 
     }
-
 }
