@@ -4,7 +4,7 @@
   1name       [ Not Valid ] => first character is a number ?
   __name      [ Valid | Bad practice ] => Reason not efficient
   name@name   [ Not Valid ] => Symbol @ ?
-  name10name  [ Valid | Bad ] => 
+  name10name  [ Valid | good ] => No capitals 
   name!name   [ Valid | Bad ] => Reason ?
   first_NAME  [ Valid | Good Practice ] => Reason ?
   first_name  [ Valid | Good Practice ] => Reason ?
