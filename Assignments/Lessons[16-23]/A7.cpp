@@ -11,6 +11,6 @@ int main()
     cout << char(d + c);
     cout << char(d + b);
 
-// Output Needed
-//"EWS"
+    // Output Needed
+    //"EWS"
 }
