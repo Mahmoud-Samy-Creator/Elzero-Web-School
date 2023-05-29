@@ -25,4 +25,4 @@
 ### 🕵️‍♂️ P9) Write a program of discount system based on no. of year experirence
 ### 🕵️‍♂️ P10) Write a program to print the even elements of an integer array
 
-### 🕵️‍♂️ Simple - Project 1) Write a program simulates guessing number game used in IQ tests
+### 🕵️‍♂️ P10) Write a program simulates guessing number game used in IQ tests
