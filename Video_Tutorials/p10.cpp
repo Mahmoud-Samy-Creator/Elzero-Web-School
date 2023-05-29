@@ -9,30 +9,46 @@ int main() {
 
     int answers[3], points = 0, i = 0;
     
-    cout << "Your test is to enter the missing number of sequence: - \n";
-    cout << "Sequence 1: 1 | 5 | 10| 16 | ??\n";
-    cout << "Your answer: ";
-    cin >> answers[0];
-    cout << "\n ========================================= \n";
-
-    cout << "Sequence 2: 2 | 4 | 8 | 16 | ??\n";
-    cout << "Your answer: ";
-    cin >> answers[1];
-
-    cout << "\n ========================================= \n";
-
-    cout << "Sequence 3: 1 | 1 | 2 | 3 | ??\n";
-    cout << "Your answer: ";
-    cin >> answers[2];
-    
-    for (i = 0 ; i < 3 ; i++)
+    while(1)
     {
-        if (answers[i] == numbers[i][4])
-            points++;
+        cout << "Your test is to enter the missing number of sequence: - \n";
+        cout << "Sequence 1: 1 | 5 | 10| 16 | ??\n";
+        cout << "Your answer: ";
+        cin >> answers[0];
+        cout << "\n ========================================= \n" << endl;
+
+        cout << "Sequence 2: 2 | 4 | 8 | 16 | ??\n";
+        cout << "Your answer: ";
+        cin >> answers[1];
+
+        cout << "\n ========================================= \n" << endl;
+
+        cout << "Sequence 3: 1 | 1 | 2 | 3 | ??\n";
+        cout << "Your answer: ";
+        cin >> answers[2];
+        
+        for (i = 0 ; i < 3 ; i++)
+        {
+            if (answers[i] == numbers[i][4])
+                points++;
+        }
+
+        cout << "Your score is " << points << " / 3" << endl;
+
+
+        if (points == 3)
+        {
+            cout << "Congrats, you passed";
+            break;
+        }
+
+        else
+        {
+            cout << "Try again\n";
+            cout << "\n ========================================== \n" << endl;
+        }
+            
     }
-
-    cout << "Your score is " << points << " / 3" << endl;
-
-    points == 3 ? cout << "Congrats, you passed" : cout << "Try again"; 
+         
     return 0;
 }
