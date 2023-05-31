@@ -13,11 +13,11 @@ int main() {
     }
 
     cout << endl;
-    
+
     i = 0;
     result = 10;
 
-    cout << "Using for loop" << endl;
+    cout << "Using while loop" << endl;
     cout << "================================\n";
 
     while (i < 5)
