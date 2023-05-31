@@ -26,3 +26,7 @@
 ### 🕵️‍♂️ P10) Write a program to print the even elements of an integer array
 
 ### 🕵️‍♂️ P10) Write a program simulates guessing number game used in IQ tests
+
+### 🕵️‍♂️ P11) You have an array includes +ve, -ve, odd & even numbers. Write a program that adds all +ve and even numbers only
+
+### 🕵️‍♂️ P12) Write a program simulates a guessing game num between 1 - 10, the user have 3 tries only to enter.
