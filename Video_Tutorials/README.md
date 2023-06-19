@@ -30,3 +30,5 @@
 ### 🕵️‍♂️ P11) You have an array includes +ve, -ve, odd & even numbers. Write a program that adds all +ve and even numbers only
 
 ### 🕵️‍♂️ P12) Write a program simulates a guessing game num between 1 - 10, the user have 3 tries only to enter.
+
+### 🕵️‍♂️ P13) Write a program to add all array elements using vectors
