@@ -6,5 +6,6 @@
 #include <iostream>
 #include <array>
 #include <algorithm>
+#include <vector>
 using namespace std;
 #endif
