@@ -9,5 +9,19 @@ age_in_days = age_in_years * 365
 age_in_min = age_in_weeks * 7 * 24
 age_in_sec = age_in_min * 60
 
-print(f"You lived {age:,} in years\n{age_in_month:,} in months\
-    \n{age_in_weeks:,} in weeks\n{age_in_min:,} in min\n{age_in_sec:,} in second ")
+print ("Choose unit to calculate according to it: ")
+print("[1] Month\n[2] Weeks\n[3] Days\n[4] Minutes\n[5] Seconds")
+choose = input("Your choise: ").strip()
+
+if choose == "1":
+    print(f"You are {age_in_month:,} in months")
+elif choose == "2":
+    print(f"You are {age_in_month:,} in weeks")
+elif choose == "3":
+    print(f"You are {age_in_days:,} in days")
+elif choose == "4":
+    print(f"You are {age_in_min:,} in min")
+elif choose == "5":
+    print(f"You are in {age_in_sec:,} seconds")
+else:
+    print("Invalid choice")
