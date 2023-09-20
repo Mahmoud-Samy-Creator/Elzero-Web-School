@@ -13,7 +13,7 @@ class Members:
 # Create Admin Class Here
 class Admins(Members):
     def __init__(self, n, p):
-        super().__init__(n, p)
+        Members.__init__(self, n, p)
 
 # Create Moderators Class Here
 class Moderators(Admins):
