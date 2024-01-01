@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book store</title>
+        <meta charset="UTF-8" lang="en-US"
+        name="Book store" content="This is my store"
+        description="Store for best selling books">
+    </head>
+    <body>
+        <h1>Book Store</h1>
+        <form action="" method="GET">
+            <div>
+                <label for>Username:</label>
+                <input id="user"
+                type="text"
+                name="user"
+                value="mahmoudSamy"
+                readonly>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label for="pass">Password:</label>
+                <input id="pass" type="password"
+                name="pass"
+                minlength="10"
+                maxlength="15">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label for="sub">Subject:</label>
+                <input id="sub"
+                type="text"
+                name="sub" autofocus>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input id="email"
+                type="email"
+                name="email"
+                value="mahmoud@on.com"
+                disabled>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label for="phone">phone</label>
+                <input id="phone" type="phone" name="phone">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <input type="radio" name="os" id="win" checked>
+                <label for="win">Windows</label>
+            </div>
+            <br>
+            
+            <div>
+                <input type="radio" id="linux" name="os">
+                <label for="linux">Linux</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="centos" name="os">
+                <label for="centos">CentOs</label>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <input type="checkbox" name="os0" id="win0" checked>
+                <label for="win0">Windows</label>
+            </div>
+            <br>
+            
+            <div>
+                <input type="checkbox" id="linux0" name="os0">
+                <label for="linux0">Linux</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="centos0" name="os0">
+                <label for="centos0">CentOs</label>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <label for="Books Selections">Book selection</label><br>
+            <br>
+            <select id="Books Selections" name="books_selection">
+                <optgroup label="Action Book">
+                    <option value="1">Book [1]</option>
+                    <option value="2">Book [2]</option>
+                    <option value="3">Book [3]</option>
+                </optgroup>
+                <optgroup label="Action Book">
+                    <option value="4">Book [4]</option>
+                    <option value="5">Book [5]</option>
+                    <option value="5">Book [6]</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <textarea
+            placeholder="Give a comment"
+            name="comments"
+            cols="45" rows="20"></textarea><br>
+            <input type="submit"><br>
+            <br>
+            <input type="Reset"><br>
+
+        </form>
+    </body>
+</html>
