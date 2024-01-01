@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form 1</title>
+        <meta charset="UTF-8"
+        lang="en-US"
+        name="form"
+        content="This is a full form">
+    </head>
+    <body>
+        <h1>My form</h1>
+        <form action="test.py" method="POST">
+            <div>
+                <label>Username: </label><br>
+                <input type="text" name="user" placeholder="" required>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label>Password:</label><br>
+                <input type="password" placeholder="complex password" name="pass">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <!--Mobule format-->
+                <label>Mobile: </label><br>
+                <input type="phone" placeholder="+20100 (234) 123" name="phone" pattern="[0-9]{3}-[0-9{3}-[0-9]{5}">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label>Email: </label><br>
+                <input type="email" placeholder="" required>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label>Subject: </label><br>
+                <input type="text" placeholder="type your subject here" name="sub">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <input type="range" name="range" min="0" max ="500" value="400"><br>
+            <br>
+            <input type="hidden" name="id" value="mahmoud">
+            <input type="submit" value="send data">
+            <input type="reset">
+        </form>
+    </body>
+</html>
