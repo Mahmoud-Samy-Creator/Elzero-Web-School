@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create accout</title>
+        <meta name="accont creation page"
+        charset="UTF-8"
+        content="data entry"
+        description="Accont info">
+    </head>
+    <body>
+        <h1>Enter your info</h1>
+        <form action="" method="GET">
+            <div>
+                <label for="user">Username</label>
+                <input
+                type="text"
+                id="user"
+                name="user"
+                maxlength="20"
+                min="5"
+                autofocus>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input
+                type="email"
+                id="email"
+                value="o@o.com"
+                name="email"
+                readonly>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <label for="token"></label>
+                <input
+                type="text"
+                id="token"
+                name="token"
+                value="b92f1fc2fce391ad7af633723afd3055"
+                hidden>
+            </div>
+            <br>
+            <div id="Choosing skills">
+                <h1>Choose your skills</h1>
+                <input type="checkbox"
+                id="Problem solving"
+                name="skill[1]"
+                value="Problem solving"
+                checked>
+                <label for="Problem solving">Problem solving</label><br>
+
+                <input type="checkbox"
+                id="Logical Thinking"
+                value="Logical Thinking"
+                name="skill[2]">
+                <label for="Logical Thinking">Logical Thinking</label><br>
+
+                <input type="checkbox"
+                id="Advanced Search"
+                value="Advanced Search"
+                name="skill[3]">
+                <label for="Advanced Search">Advanced Search</label><br>
+
+                <input type="checkbox"
+                id="Analysis"
+                value="Analysis"
+                name="Analysis">
+                <label for="Analysis">Analysis</label><br>
+                <br>
+            </div>
+            <hr>
+            <div id="job">
+                <h1>Choose your job</h1>
+                <input
+                type="radio"
+                id="Front-End engineer"
+                value="Front-End engineer"
+                name="job"
+                checked>
+                <label for="Front-End engineer">Front-End engineer</label><br>
+
+                <input
+                type="radio"
+                id="Back-End engineer"
+                value="Back-End engineer"
+                name="job">
+                <label for="Back-End engineer">Back-End engineer</label><br>
+
+                <input
+                type="radio"
+                id="Cyber secuirity"
+                value="Cyber secuirity"
+                name="job">
+                <label for="Cyber secuirity">Cyber secuirity</label><br>
+
+                <input
+                type="radio"
+                id="Bash scripter"
+                value="Bash scripter"
+                name="job">
+                <label for="Bash scripter">Bash scripter</label><br>
+            </div>
+            <br>
+            <input type="reset" value="Empty"><br>
+            <br>
+            <input type="submit" value="Send"><br>
+        </form>
+    </body>
+</html>
