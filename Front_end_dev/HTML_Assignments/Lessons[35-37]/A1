@@ -1,0 +1,8 @@
+1. <input type="submit" value="send">
+2. <title>title name</title>
+3. <p></p> || <pre></pre>
+4. indroducing lang attribute in <html></html> headig
+    Ex: <hrml lang="en"></hrml>
+5. 10 - 20
+6. <div role="checked" aria-cheked="true" tabidex="0"></div>
+7. ARIA => Accesable Reach Internet Application
