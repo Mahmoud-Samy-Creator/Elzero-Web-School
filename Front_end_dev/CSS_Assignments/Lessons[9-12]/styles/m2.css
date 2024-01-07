@@ -1,0 +1,21 @@
+div
+{
+    width: 400px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgb(195, 200, 205);
+    outline: rgb(195, 200, 205) solid 5px;
+}
+
+.element-1
+{
+    border-left: red solid 5px;
+}
+.element-2
+{
+    border-left: green solid 5px;
+}
+.element-3
+{
+    border-left: blue solid 5px;
+}
