@@ -1,0 +1,24 @@
+/*
+قم بتلوين كلمة Title باللون الأحمر
+قم بتلوين جملة Child Title باللون الأزرق
+قم بتلوين جملة Paragraph Content باللون الأخضر
+قم بتلوين جملة Section Title باللون الأخضر
+قم بجمع الألوان المتشابهه مع بعضها
+*/
+
+
+.parent .child .title
+{
+    color: red;
+}
+
+.parent .title
+{
+    color: blue;
+}
+
+body .title,
+div p
+{
+    color: green;
+}
