@@ -1,0 +1,30 @@
+.one
+{
+    width: 400px;
+    background-color: rgb(244, 244, 244);
+    padding: 15px;
+    margin: 15px;
+}
+
+.two
+{
+    width: 400px;
+    background-color: rgb(244, 244, 244);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: initial;
+    padding: 15px;
+    margin: 15px;
+}
+
+.three
+{
+    width: 400px;
+    max-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: rgb(244, 244, 244);
+    padding: 15px;
+    margin: 15px;
+}
