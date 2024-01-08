@@ -1,0 +1,24 @@
+html
+{
+    font-size: 20px;
+}
+
+.p1
+{
+    font-size: 2.5rem;
+}
+
+.p2
+{
+    font-size: 2rem;
+}
+
+.p3
+{
+    font-size: 1.5rem;
+}
+
+.p1, .p2, .p3
+{
+    text-align: center;
+}
