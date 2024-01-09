@@ -1,0 +1,56 @@
+div
+{
+    text-align: center;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+}
+
+.parent
+{
+    width: 1000px;
+    background-color: rgb(241, 241, 241);
+    height: fit-content;
+}
+
+.row_1 div
+{
+    background-color: rgb(221, 221, 221);
+    width: calc(100% - 15px);
+    float: left;
+}
+.row_2 div
+{
+    background-color: rgb(221, 221, 221);
+    width: calc(50% - 15px);
+    float: left;
+}
+
+.row_3 div
+{
+    background-color: rgb(221, 221, 221);
+    width: calc(33.3333% - 15px);
+    float: left;
+}
+
+.row_4 div
+{
+    background-color: rgb(221, 221, 221);
+    width: calc(25% - 15px);
+    float: left;
+    margin-bottom: 15px;
+}
+
+.row_1 div,
+.row_2 div,
+.row_3 div,
+.row_4 div
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 15px;
+}
+
+.clear
+{
+    clear: both;
+}
