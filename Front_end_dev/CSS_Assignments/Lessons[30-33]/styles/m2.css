@@ -1,0 +1,57 @@
+div
+{
+    width: 400px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    border-top: 2.5px solid red;
+    border-bottom: 2.5px solid red;
+    border-left: 2.5px solid rgb(15, 117, 150);
+    border-right: 2.5px solid rgb(15, 117, 150);
+    position: relative;
+}
+
+div span
+{
+    background-color: rgb(15, 117, 150);
+    padding: 5px 15px;
+    position: absolute;
+}
+
+.top-left,
+.bottom-left
+{
+    border-right: 2.5px solid red;
+}
+
+.top-right,
+.bottom-right
+{
+    border-left: 2.5px solid red;
+}
+
+.top-left
+{
+    top: -15px;
+    left: -21px;
+}
+
+.top-right
+{
+    top: -15px;
+    right: -21px;
+}
+
+.bottom-left
+{
+    bottom: -15px;
+    left: -21px;
+}
+
+.bottom-right
+{
+    bottom: -15px;
+    right: -21px;
+}
+
