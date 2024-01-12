@@ -1,0 +1,21 @@
+.main
+{
+    list-style-type: none;
+}
+
+.list_1,
+.list_2,
+.list_3
+{
+    background-color: #eee;
+    margin: 10px;
+    padding: 10px;
+}
+
+ol li,
+li ul li
+{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
