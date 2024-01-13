@@ -1,0 +1,50 @@
+table
+{
+    margin: auto;
+    width: 700px;
+    text-align: center;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr
+{
+    background-color: rgb(238, 238, 238);
+}
+
+thead tr
+{
+    background-color: rgb(64, 64, 64)    ;
+    color: white;
+    font-weight: bold;
+}
+
+td
+{
+    padding: 10px;
+}
+
+img
+{
+    width: 70px;
+}
+
+span
+{
+    margin: 0 1px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.view
+{
+    background-color: rgb(3, 169, 244);
+}
+
+.delete
+{
+    background-color: rgba(233, 30, 99);
+}
