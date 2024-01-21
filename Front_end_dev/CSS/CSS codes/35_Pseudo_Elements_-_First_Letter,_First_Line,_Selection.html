@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS</title>
+		<style>
+            .one::first-letter
+            {
+                display: inline-block;
+                color: red;
+                font-size: 60px;
+                font-weight: bold;
+            }
+
+            .two::first-line
+            {
+                display: inline-block;
+                color: red;
+                font-size: 60px;
+                font-weight: bold;
+            }
+
+            .three::selection
+            {
+                background-color: black;
+                color: yellow;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="one">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+			Laudantium accusantium ipsa veniam officiis
+			blanditiis numquam rerum! Eligendi perspiciatis atque ut adipisci quam,
+			temporibus eveniet nisi assumendaconsequatur, maiores ad veritatis.
+		</div>
+		<hr />
+		<div class="two">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+			Laudantium accusantium ipsa veniam officiis
+			blanditiis numquam rerum! Eligendi perspiciatis atque ut adipisci quam,
+			temporibus eveniet nisi assumendaconsequatur, maiores ad veritatis.
+		</div>
+		<hr />
+		<p class="three">
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+		Laudantium accusantium ipsa veniam officiis
+		blanditiis numquam rerum! Eligendi perspiciatis atque ut adipisci quam,
+		temporibus eveniet nisi assumendaconsequatur, maiores ad veritatis.
+		</p>
+	</body>
+</html>
