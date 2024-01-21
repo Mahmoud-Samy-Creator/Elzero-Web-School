@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS</title>
+		<style>
+            /*
+
+            Block
+
+                - Take Full Width If No Width
+                    - Add Line Break
+                - Respect Padding, Margin, Width, Height
+
+                Inline
+
+                    - Allow Elements Before And After It in The Same Line
+                        - Do Not Add Line Break
+                    - Do Not Repsepct Width, Height
+                    - Respect Padding And Margin [ Just Wight + Left ]
+
+                    Inline-Block
+
+                        - Allow Elements Before And After It in The Same Line
+                            - Respect Padding, Margin, Width, Height
+
+            */
+
+            span
+            {
+                background-color: #EEE;
+                display: inline-block;
+            }
+		</style>
+	</head>
+	<body>
+		<div>Div => Block</div>
+		<div>Div => Block</div>
+		<div>Div => Block</div>
+
+		<span>Span => Inline</span>
+		<span>Span => Inline</span>
+		<span>Span => Inline</span>
+	</body>
+</html>
