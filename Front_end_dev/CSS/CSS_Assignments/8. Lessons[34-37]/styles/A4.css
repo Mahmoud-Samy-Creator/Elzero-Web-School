@@ -1,0 +1,26 @@
+p
+{
+    padding: 10px;
+    width: 450px;
+    margin: 10px auto;
+    background-color: #eee;
+    border-right: solid 4px rgb(255, 88, 11);
+    counter-increment: members;
+    position: relative;
+}
+
+p::before
+{
+    content: counter(members);
+    background-color: rgb(194, 63, 3);
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: 0;
+    left: -40px;
+}
+
