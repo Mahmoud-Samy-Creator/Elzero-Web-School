@@ -1,0 +1,17 @@
+div
+{
+    text-align: center;
+    margin: 10px auto;
+    width: 300px;
+    height: 60px;
+}
+div .one
+{
+    background-color: #eee;
+    line-height: 51px;
+}
+
+div .empty
+{
+    background-color: red;
+}
