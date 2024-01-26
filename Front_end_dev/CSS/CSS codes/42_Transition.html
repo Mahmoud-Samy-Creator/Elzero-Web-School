@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lesson 42</title>
+        <style>
+            .one
+            {
+                background-color: #EEE;
+                width: 200px;
+                height: 100px;
+                transition-duration: 1s;
+                /* transition-delay: 2s; */
+                /* transition-property: height; */
+                /* transition-timing-function: ease; */
+                transition-timing-function: linear;
+                /*Short hand*/
+                /* transition: property] [duration] [delay] [timing-function]; */
+                transition: all 2s 0.5s linear;
+            }
+
+            .one:hover
+            {
+                width: 280px;
+                height: 120px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="one">One</div>
+    </body>
+</html>
