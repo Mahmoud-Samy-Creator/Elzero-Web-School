@@ -1,0 +1,73 @@
+.parent
+{
+    width: 1500px;
+    margin: 10px auto;
+    text-align: center;
+}
+.card_1,
+.card_2
+{
+    width: 550px;
+    height: 600px;
+    margin: 40px 40px;
+    padding-top: 15px; 
+    position: relative;
+    display: inline-block;
+    background-color: #eee;
+}
+
+.choice
+{
+    width: 480px;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #03a8f5;
+}
+
+.price
+{
+    width: 440px;
+    height: 440px;
+    font-size: 100px;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 440px;
+    border-radius: 50%;
+    background-color: #dcdcdd;
+}
+
+.price:hover
+{
+    box-shadow: 10px 10px 84px -40px black inset;
+}
+
+.card_1::before
+{
+    z-index: 1;
+    top: 289px;
+    width: 40px;
+    height: 40px;
+    right: -65px;
+    content: "Or";
+    color: white;
+    line-height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #03a8f5;
+}
+
+.card_2::before
+{
+    top: 0;
+    content: "";
+    left: -42px;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #03a8f5;
+}
