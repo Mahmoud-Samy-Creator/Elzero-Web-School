@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta   charset="UTF-8" />
+        <title>Lesson 46</title>
+        <style>
+            /*
+            Flexible Box
+            For Parent
+            - display: flex => To Start Flexible Box ---> parent
+            - flex-direction: row => Default Value ---> parent
+            - flex-wrap: nowrap => Default Value
+            - flex-flow: [Flex-Direction] + [Flex-Wrap]
+            */
+
+            .flex
+            {
+                background-color: #eee;
+                width: 600px;
+                padding: 20px;
+                margin: 20px auto;
+                display: flex;
+                /* flex-direction: column; */
+                /* flex-direction: column-reverse; */
+                /* flex-direction: row-reverse; */
+                /* flex-direction: row; --> default */
+                flex-wrap: nowrap;
+            }
+
+            .flex div
+            {
+                background-color: #f00;
+                color: white;
+                width: 25%;
+                text-align: center;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Flex</h3>
+        <div class="flex">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+        </div>
+    </body>
+</html>
