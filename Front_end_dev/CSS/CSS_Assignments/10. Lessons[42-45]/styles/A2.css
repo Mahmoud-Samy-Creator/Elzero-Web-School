@@ -1,0 +1,11 @@
+div
+{
+    background-color: #eee !important;
+    border: none !important;
+    text-align: center !important;
+    font-size: larger !important;
+    color: black !important;
+    font-weight: bold !important;
+    width: 400px !important;
+    margin: 10px auto !important;
+}
