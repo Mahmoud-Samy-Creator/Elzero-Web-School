@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lesson 51</title>
+        <style>
+            /*
+            Flexible Box
+            For Parent
+            - display: flex => To Start Flexible Box
+            - flex-direction: row => Default Value
+            - flex-wrap: nowrap => Default Value
+            - flex-flow: [Flex-Direction] + [Flex-Wrap]
+            - justify-content: flex-start => Default Value
+            - align-items: stretch => Default Value
+            - align-content: stretch => Default Value
+            For Child
+            - flex-grow: 0 => Default Value
+            - flex-shrink: 1 => Default Value
+            - order: 0 => Default Value
+            - flex-basis: auto => Default Value
+            - flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 Auto
+            */
+
+            *
+            {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .flex
+            {
+                width: 600px;
+                display: flex;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #eee;
+                justify-content: space-between;
+                /* flex-direction: column; */
+            }
+
+            .flex div
+            {
+                /* width: 80px; */
+                width: calc(100% / 3);
+                /* flex-grow: 1; */
+                padding: 20px;
+                color: white;
+                text-align: center;
+                background-color: #f00;
+                /* margin-right: 5px; */
+                /* flex-basis: 80px; */
+                /* flex: 1 auto; */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+
+        </div>
+    </body>
+</html>
