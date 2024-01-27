@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lesson 48</title>
+        <style>
+            /*
+            Flexible Box
+            For Parent
+            - display: flex => To Start Flexible Box
+            - flex-direction: row => Default Value
+            - flex-wrap: nowrap => Default Value
+            - flex-flow: [Flex-Direction] + [Flex-Wrap]
+            ---
+            - justify-content: flex-start => Default Value
+            - align-items: stretch => Default Value
+            */
+            *
+            {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .flex
+            {
+                background-color: #eee;
+                width: 600px;
+                padding: 20px;
+                margin: 20px auto;
+                display: flex;
+                /* flex-flow: row wrap;*/
+                /* justify-content: center; */
+                /* align-items: stretch; */
+                /* align-items:flex-end; */
+                /* align-items:flex-start; */
+            }
+
+            .flex div
+            {
+                background-color: #f00;
+                color: white;
+                width: calc(100% / 3);
+                padding: 20px;
+                text-align: center;
+            }
+
+            .flex .one,
+            .flex .two
+            {
+                height: 80px;
+            }
+
+            .box
+            {
+                width: 400px;
+                height: 400px;
+                background-color: blue;
+                color: white;
+                font-size: larger;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* text-align: center;
+                line-height: 400px; */
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Flex</h3>
+        <div class="flex">
+            <div class="one">One</div>
+            <div class="two">Two</div>
+            <div>Three</div>
+        </div>
+        <div class="box">Center</div>
+    </body>
+</html>
