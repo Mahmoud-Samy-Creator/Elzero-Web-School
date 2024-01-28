@@ -1,0 +1,19 @@
+:root
+{
+    --mainColor: rgb(255, 85, 0);
+}
+
+div
+{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    font-weight: bold;
+    margin: 20px auto;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    color: var(--mainColor);
+    background-color: #eee;
+    box-shadow: 8px 0 var(--mainColor), -8px 0 rgb(0, 201, 228);
+}
