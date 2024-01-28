@@ -1,0 +1,99 @@
+/* Wild cards */
+*
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root
+{
+    --mainPadding: 10px;
+}
+
+
+/* Page styling */
+body
+{
+    display: flex;
+    min-height: 98vh;
+    flex-direction: column;
+    background-color:  #eee;
+}
+
+.logo,
+header,
+content,
+aside,
+footer
+{
+    background-color: #dddcdc;
+    border: solid 0.1px black; 
+}
+
+/* Header & logo styling */
+.upper_part
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--mainPadding);
+}
+
+header
+{
+    width: 78%;
+}
+
+header ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+ul li
+{
+    padding: 0 var(--mainPadding);
+}
+
+/* Content & sidebar styling */
+.middle_part
+{
+    flex-grow: 1;
+    display: flex;
+    margin: 20px 0 20px 0;
+    justify-content: space-between;
+}
+
+.middle_part content
+{
+    width: 58%;
+    padding: var(--mainPadding);
+}
+
+.middle_part aside
+{
+    width: 40%;
+    padding: var(--mainPadding);
+}
+
+footer
+{
+    display: flex;
+    padding: var(--mainPadding);
+    justify-content: space-between;
+}
+
+footer div
+{
+    padding: 5px;
+}
+
