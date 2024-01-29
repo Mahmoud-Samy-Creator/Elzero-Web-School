@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lesson 60</title>
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            ul
+            {
+                list-style-type: none;
+            }
+
+            ul li
+            {
+                cursor: pointer;
+                padding: 0 20px;
+                display: inline-block;
+            }
+
+            .page
+            {
+                margin: 10px;
+                height: 97vh;
+                display: grid;
+                gap: 10px 10px;
+                grid-template-rows: 50px auto 50px;
+                grid-template-columns: repeat(10, 1fr);
+                background-color: #eee;
+                grid-template-areas:
+                    "logo logo nav nav nav nav nav nav nav nav"
+                    "cont cont cont cont cont cont cont cont side side"
+                    "foot foot foot foot foot foot foot foot foot foot";
+            }
+
+            h2
+            {
+                grid-area: logo;
+            }
+
+            nav
+            {
+                grid-area: nav;
+            }
+            
+            aside
+            {
+                grid-area: side;
+            }
+
+            footer
+            {
+                grid-area: foot;
+            }
+
+            section
+            {
+                grid-area: cont;
+            }
+
+            h2,
+            nav,
+            aside,
+            footer,
+            section
+            {
+                display: flex;
+                color: black;
+                padding-left: 10px;
+                align-items: center;
+                border: 0.5px solid black;
+                background-color: rgb(204, 214, 223);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <h2>Logo</h2>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <section>Content</section>
+            <aside>Sidebar</aside>
+            <footer>Footer</footer>
+        </div>
+    </body>
+</html>
