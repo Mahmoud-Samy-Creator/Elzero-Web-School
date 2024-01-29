@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lesson 54</title>
+        <style>
+            body
+            {
+                min-height: 100vh;
+            }
+            img
+            {
+                width: 400px;
+                height: 220px;
+                transition-duration: 0.2s;
+            }
+            
+            .blur
+            {
+                filter: blur(4px);
+            }
+
+            .blur:hover
+            {
+                filter: blur(0);
+            }
+            
+            .grayscale
+            {
+                filter: grayscale(100%);
+            }
+            
+            .grayscale:hover
+            {
+                filter: grayscale(0%)
+            }
+
+            .invert
+            {
+                filter: invert(40)
+            }
+            
+            .invert:hover
+            {
+                filter: invert(0)
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>grayscale</h1>
+        <img decoding="async" class="grayscale" src="assets/How-to-Learn-Programming.png">
+        <hr>
+        <h2>blur</h1>
+        <img decoding="async" class="blur" src="assets/How-to-Learn-Programming.png">
+        <hr>
+        <h2>Invert</h1>
+        <img decoding="async" class="invert" src="assets/How-to-Learn-Programming.png">
+    </body>
+</html>
