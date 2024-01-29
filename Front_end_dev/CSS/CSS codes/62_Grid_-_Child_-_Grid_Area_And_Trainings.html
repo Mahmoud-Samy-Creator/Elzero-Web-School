@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lesson 62</title>
+        <style>
+            *
+            {
+                box-sizing: border-box;
+            }
+            .parent
+            {
+                width: 800px;
+                height: 500px;
+                display: grid;
+                gap: 10px 10px;
+                margin: 20px auto;
+                background-color: #eee;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            .parent div
+            {
+                color: white;
+                padding: 20px;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                text-align: center;
+                transition-duration: 0.5s;
+                background-color: rgb(27, 167, 214);
+            }
+
+            .parent .class_9
+            {
+                grid-row-end: 5;
+                grid-row-start: 2;
+                grid-column-start: 2;
+                grid-column-end: 6;
+                background-color: rgb(163, 47, 47);
+            }
+
+            .parent div:hover
+            {
+                opacity: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div class="class_9">9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+        </div>
+    </body>
+</html>
