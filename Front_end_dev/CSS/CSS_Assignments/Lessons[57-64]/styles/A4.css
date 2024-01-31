@@ -1,0 +1,74 @@
+    *
+    {
+        box-sizing: border-box;
+    }
+
+    .grid
+    {
+        background-color: #ddd;
+        padding: 20px;
+        width: 800px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        margin: 20px none;
+        grid-template-areas:
+        "eight eight eight eight eight eight eight eight eight eight"
+        "two two two two two two two two three three"
+        "four four four five five five five five five five"
+        "six six six five five five five five five five"
+        "seven seven seven five five five five five five five"
+        "one one one one one one one one one one";
+        gap: 10px 10px;
+    }
+
+    .grid div
+    {
+        background-color: #2096f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .one
+    {
+        grid-area: one;
+    }
+
+    .two
+    {
+        grid-area: two;
+    }
+
+    .three
+    {
+        grid-area: three;
+    }
+
+    .four
+    {
+        grid-area: four;
+    }
+
+    .five
+    {
+        grid-area: five;
+    }
+
+    .six
+    {
+        grid-area: six;
+    }
+
+    .seven
+    {
+        grid-area: seven;
+    }
+
+    .eight
+    {
+        grid-area: eight;
+    }
