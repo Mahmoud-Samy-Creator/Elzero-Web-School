@@ -1,7 +1,6 @@
 *
 {
     box-sizing: border-box;
-    counter-increment: members-number;
 }
 
 .grid
