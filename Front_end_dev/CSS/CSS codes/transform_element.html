@@ -2,19 +2,33 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Transform element</title>
+        <title>Transform illustration</title>
         <style>
             *
             {
                 box-sizing: border-box;
             }
 
-            body
+            body,
+            .main,
+            .outer,
+            .inner
             {
-                height: 100vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+
+            body
+            {
+                height: 100vh;
+            }
+
+            .main
+            {
+                width: 450px;
+                height: 450px;
+                position: relative;
             }
 
             .outer
@@ -22,9 +36,6 @@
                 background-color: #eee;
                 width: 400px;
                 height: 400px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 position: relative;
             }
 
@@ -43,7 +54,7 @@
                 content: "";
                 position: absolute;
                 height: 100%;
-                width: 4px;
+                width: 3px;
                 background-color: black;
                 left: -17px;
             }
@@ -53,42 +64,46 @@
                 background-color: #fc9d8f;
                 width: 350px;
                 height: 350px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 color: white;
                 font-size: 50px;
                 font-weight: bold;
                 position: relative;
+                transition: 0.5s;
+                z-index: 1;
             }
 
-            .inner::before
+            .main::before
             {
                 content: "X-axis";
                 position: absolute;
-                bottom: -61px;
-                color: black;
-                font-size: 30px;
-                background-color: white;
-            }
-
-            .inner::after
-            {
-                content: "Y-axis";
-                position: absolute;
-                left: -80px;
+                bottom: -9px;
                 color: black;
                 font-size: 30px;
                 background-color: white;
                 z-index: 1;
             }
 
+            .main::after
+            {
+                content: "Y-axis";
+                position: absolute;
+                left: -33px;
+                color: black;
+                font-size: 30px;
+                background-color: white;
+                transform: rotate(90deg);
+            }
+
         </style>
     </head>
     <body>
-        <div class="outer">
-            <div class="inner">
-            Transform
+        <div class="main">
+            <div class="illustration_element">
+                <div class="outer">
+                    <div class="inner">
+                    Transform
+                    </div>
+                </div>
             </div>
         </div>
     </body>
