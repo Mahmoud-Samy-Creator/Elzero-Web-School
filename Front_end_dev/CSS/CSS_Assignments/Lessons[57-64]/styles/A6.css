@@ -1,0 +1,95 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #eee;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "one one one one two two three three"
+        "four four five five five five three three"
+        "four four six six six six three three"
+        "seven seven eight eight nine nine ten ten"
+        ;
+    gap: 10px 10px;
+}
+
+body div
+{
+    background-color: white;
+    padding: 10px;
+    height: fit-content;
+}
+
+body .card
+{
+    border-bottom: solid 4px rgb(247, 98, 5);
+}
+
+
+.three,
+.five,
+.eight,
+.five div,
+.three div,
+.eight div
+{
+    background-color: black;
+    color: white;
+}
+
+body .three,
+body .five,
+body .eight
+{
+    border-bottom: solid 2px red;
+}
+
+.one
+{
+    grid-area: one;
+}
+.two
+{
+    grid-area: two;
+}
+.three
+{
+    grid-area: three;
+}
+
+.four
+{
+    grid-area: four;
+}
+.five
+{
+    grid-area: five;
+}
+.six
+{
+    grid-area: six;
+}
+.seven
+{
+    grid-area: seven;
+}
+.eight
+{
+    grid-area: eight;
+}
+.nine
+{
+    grid-area: nine;
+}
+.ten
+{
+    grid-area: ten;
+}
