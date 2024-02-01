@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Transform element</title>
+        <style>
+            *
+            {
+                box-sizing: border-box;
+            }
+
+            body
+            {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .outer
+            {
+                background-color: #eee;
+                width: 400px;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .outer::before
+            {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                background-color: black;
+                bottom: -17px;
+            }
+
+            .outer::after
+            {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 3px;
+                background-color: black;
+                left: -17px;
+            }
+
+            .inner
+            {
+                background-color: #fc9d8f;
+                width: 350px;
+                height: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 50px;
+                font-weight: bold;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .inner:hover
+            {
+                /* transform: scaleX(1.5); */
+                /* transform: scaleY(1.5); */
+                /* transform: scale(1.5); */
+                transform: scale(1.5, 1.5);
+            }
+
+            .inner::before
+            {
+                content: "X-axis";
+                position: absolute;
+                bottom: -61px;
+                color: black;
+                font-size: 30px;
+                background-color: white;
+            }
+
+            .inner::after
+            {
+                content: "Y-axis";
+                position: absolute;
+                left: -80px;
+                color: black;
+                font-size: 30px;
+                background-color: white;
+                z-index: 1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">
+            Transform
+            </div>
+        </div>
+    </body>
+</html>
