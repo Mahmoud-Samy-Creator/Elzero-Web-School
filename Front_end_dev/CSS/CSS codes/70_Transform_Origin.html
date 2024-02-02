@@ -77,6 +77,7 @@
             {
                 transform: rotate(100deg);
             }
+
             .main::before
             {
                 content: "X-axis";
@@ -99,30 +100,31 @@
                 transform: rotate(90deg);
             }
 
-            .main .illustration_element .origin
+            .main .origin
             {
                 position: absolute;
                 width: 20px;
                 height: 20px;
                 background-color: red;
                 border-radius: 50%;
-                left: 50%;
                 top: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(138%, -50%);
                 left: 0;
                 z-index: 1;
             }
 
+            .main
+            {
+                background-color: rgb(123, 214, 228);
+            }
         </style>
     </head>
     <body>
         <div class="main">
-            <div class="illustration_element">
                 <span class="origin"></span>
-                <div class="outer">
-                    <div class="inner">
-                    Transform
-                    </div>
+            <div class="outer">
+                <div class="inner">
+                Transform
                 </div>
             </div>
         </div>
