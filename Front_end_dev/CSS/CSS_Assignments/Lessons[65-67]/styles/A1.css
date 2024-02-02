@@ -1,0 +1,43 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container
+{
+    margin: 100px auto;
+    width: 300px;
+}
+
+.elzero
+{
+    width: 300px;
+    height: 150px;
+    background-color: #eee;
+    color: #02a8f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.box_1
+{
+    width: 300px;
+    height: 150px;
+    background-color: #02a8f4;
+    position: absolute;
+    transform: rotate(5deg);
+}
+
+.box_2
+{
+    width: 300px;
+    height: 150px;
+    background-color: #e81f63;
+    position: absolute;
+    transform: rotate(-5deg);
+}
