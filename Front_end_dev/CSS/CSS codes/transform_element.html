@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Transform illustration</title>
+        <title>Lesson 71</title>
         <style>
             *
             {
@@ -31,32 +31,13 @@
                 position: relative;
             }
 
+
             .outer
             {
                 background-color: #eee;
                 width: 400px;
                 height: 400px;
                 position: relative;
-            }
-
-            .outer::before
-            {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 4px;
-                background-color: black;
-                bottom: -17px;
-            }
-
-            .outer::after
-            {
-                content: "";
-                position: absolute;
-                height: 100%;
-                width: 3px;
-                background-color: black;
-                left: -17px;
             }
 
             .inner
@@ -69,7 +50,13 @@
                 font-weight: bold;
                 position: relative;
                 transition: 0.5s;
-                z-index: 1;
+                opacity: 0.9;
+                z-index: 3;
+            }
+
+            .axis
+            {
+                position: relative;
             }
 
             .main::before
@@ -92,17 +79,61 @@
                 font-size: 30px;
                 background-color: white;
                 transform: rotate(90deg);
+                z-index:2 ;
+            }
+
+            .outer::before
+            {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                background-color: black;
+                bottom: -17px;
+            }
+
+            .outer::after
+            {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 4px;
+                background-color: black;
+                left: -17px;
+                z-index:1 ;
+            }
+
+            .axis::after
+            {
+                content: "";
+                position: absolute;
+                width: 300px;
+                height: 4px;
+                background-color: black;
+                bottom: 0;
+                transform: translate(-298px, 324px) rotate(135deg);
+                z-index:1 ;
+            }
+
+            .axis::before
+            {
+                content: "Z-axis";
+                font-size: 40px;
+                position: absolute;
+                color: black;
+                background-color: white;
+                transform: scale(0.6) translate(-307px, 450px) rotate(-48deg);
+                z-index: 2;
             }
 
         </style>
     </head>
     <body>
         <div class="main">
-            <div class="illustration_element">
-                <div class="outer">
-                    <div class="inner">
-                    Transform
-                    </div>
+            <div class="outer">
+                <span class= "axis"></span>
+                <div class="inner">
+                Transform
                 </div>
             </div>
         </div>
