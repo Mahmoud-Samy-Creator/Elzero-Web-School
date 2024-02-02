@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <mata charset="UTF-8" />
+        <title>Lesson 73</title>
+        <style>
+            *
+            {
+                box-sizing: border-box;
+            }
+
+            body
+            {
+                font-family: sans-serif;
+            }
+
+            .container
+            {
+                margin: 60px auto;
+                width: 200px;
+                /* [6] From here*/
+                /* 3D effect using prespective */
+                perspective: 300px;
+            }
+
+            .box
+            {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                /* From here*/
+                /* [2] From Here */
+                transform-style: preserve-3d; /* Save his place on 3d*/
+                transition: 0.7s;
+            }
+
+            .box:hover
+            {
+                /* [5] From Here */
+                transform: rotateY(-180deg);
+            }
+            .box .face
+            {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                font-size: 30px;
+                color: white;
+                /* [3] From here */
+                backface-visibility: hidden; /* Default --> visible */
+            }
+
+            .box .front
+            {
+                background-color: red;
+            }
+
+            .box .back
+            {
+                background-color: green;
+                /* [1] From here */
+                transform: rotateY(180deg);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+            </div>
+        </div>
+    </body>
+</html>
