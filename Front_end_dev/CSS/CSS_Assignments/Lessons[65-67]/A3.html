@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>A3</title>
+        <style>
+            *
+            {
+                box-sizing: border-box;
+            }
+
+            div
+            {
+                width: 200px;
+                height: 200px;
+                background-color: #eee;
+                margin: 40px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            div:after
+            {
+                content: "";
+                position: absolute;
+                border: 5px solid;
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                border-color: #e91e63 #e91e63 #e91e63 white;
+                transition: 0.5s;
+            }
+            
+            div:before
+            {
+                content: "";
+                position: absolute;
+                border: 5px #2196f3 solid;
+                border-radius: 50%;
+                width: 210px;
+                height: 210px;
+                border-color: #2196f3 white #2196f3 #2196f3;
+                transition: 0.5s;
+                transition-delay: 0.5s;
+            }
+
+            div:hover::after
+            {
+                transform: rotate(1turn);
+            }
+
+            div:hover::before
+            {
+                transform: rotate(1turn);
+            }
+        </style>
+    </head>
+    <body>
+            <div class="elzero">Elzero</div>
+    </body>
+</html>
