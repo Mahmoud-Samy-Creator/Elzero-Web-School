@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+    <title>Assignment 1</title>
+    <style>
+        div
+        {
+            background-color: #fe5723;
+            margin: 100px auto;
+            width: 150px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            position: relative;
+        }
+        
+        div::after,
+        div::before
+        {
+            content: "";
+            background-color: #fe5723;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        div::before
+        {
+            transform: skew(10deg, 10deg);
+        }
+
+        div::after
+        {
+            transform: skew(-10deg, -10deg);
+        }
+    </style>
+    <body>
+        <div>Elzero</div>
+    </body>
+</html>
