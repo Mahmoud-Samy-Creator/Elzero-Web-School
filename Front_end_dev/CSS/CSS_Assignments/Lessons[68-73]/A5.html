@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Assignment 5</title>
+        <style>
+            *
+            {
+                box-sizing: border-box;
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .container_1,
+            .container_2
+            {
+                margin: 100px auto;
+                width: 200px;
+                perspective: 300px;
+            }
+
+            .container_1 .box
+            {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                /* Step[2]: preserve place in 3d */
+                transform-style: preserve-3d;
+                transition: 0.5s;
+                perspective: 300px;
+            }
+
+            .container_1 .box .face
+            {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                /* Step [3]: Hidden faceback visibility */
+                backface-visibility: hidden;
+            }
+
+            .container_1 .box .front
+            {
+                background-color: #e81f63;
+            }
+            
+            .container_1 .box .back
+            {
+                background-color: #03a8f5;
+                /* Step [1]: Rotating back face*/
+                transform: rotateY(180deg)
+            }
+
+            .container_1 .box:hover
+            {
+                /* Step[4]: Rotate with hover */
+                transform: rotateY(-180deg);
+            }
+
+            .container_2 .box
+            {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                /* Step[2]: preserve place in 3d */
+                transform-style: preserve-3d;
+                transition: 0.5s;
+                perspective: 300px;
+            }
+
+            .container_2 .box .face
+            {
+                width: 100%;
+                height: 100%;            .container_1 .box
+            {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                /* Step[2]: preserve place in 3d */
+                transform-style: preserve-3d;
+                transition: 0.5s;
+                perspective: 300px;
+            }
+
+            .container_1 .box .face
+            {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                /* Step [3]: Hidden faceback visibility */
+                backface-visibility: hidden;
+            }
+
+            .container_1 .box .front
+            {
+                background-color: #e81f63;
+            }
+            
+            .container_1 .box .back
+            {
+                background-color: #03a8f5;
+                /* Step [1]: Rotating back face*/
+                transform: rotateY(180deg)
+            }
+
+            .container_1 .box:hover
+            {
+                /* Step[4]: Rotate with hover */
+                transform: rotateY(-180deg);
+            }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                /* Step [3]: Hidden faceback visibility */
+                backface-visibility: hidden;
+            }
+
+            .container_2 .box .front
+            {
+                background-color: #e81f63;
+            }
+            
+            .container_2 .box .back
+            {
+                background-color: #03a8f5;
+                /* Step [1]: Rotating back face*/
+                transform: rotateX(180deg)
+            }
+
+            .container_2 .box:hover
+            {
+                /* Step[4]: Rotate with hover */
+                transform: rotateX(-180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container_1">
+            <div class="box">
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+            </div>
+
+            <div class="container_2">
+            <div class="box">
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+            </div>
+        </div>
+    </body>
+</html>
