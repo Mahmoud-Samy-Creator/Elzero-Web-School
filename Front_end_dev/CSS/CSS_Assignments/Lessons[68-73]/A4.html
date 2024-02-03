@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Assignment 4</title>
+        <style>
+            *
+            {
+                box-sizing: border-box;
+            }
+
+            .container
+            {
+                width: 200px;
+                margin: 300px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .container .rec
+            {
+                width: 200px;
+                height: 200px;
+                background-color: #617c8b;
+                position: relative;
+                border-bottom: solid 5px black;
+            }
+
+            .container .rec p
+            {
+                position: absolute;
+                bottom: 0;
+                left: 15px;
+                color: white;
+                font-weight: bold;
+            }
+
+            .container .square
+            {
+                width: 141.5px;
+                height: 141.5px;
+                position: absolute;
+                background-color: black;
+                rotate: 45deg;
+                bottom: 129px;
+                border-right: solid white 3px;
+                border-bottom: solid white 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="rec">
+                <p>Elzero</p>
+            </div>
+            <div class="square"></div>
+        </div>
+    </body>
+</html>
