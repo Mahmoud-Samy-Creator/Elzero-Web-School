@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>A2</title>
+        <style>
+            *
+            {
+                box-sizing: border-box;
+            }
+
+            .container
+            {
+                margin: 200px auto;
+                width: 500px;
+                background-color: aqua;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container div
+            {
+                position: absolute;
+                border-radius: 50%;
+            }
+
+            .container .box_1
+            {
+                border: 5px solid;
+                width: 210px;
+                height: 210px;
+                border-color: #e91e63 #e91e63 #e91e63 white;
+            }
+            
+            .container .box_2
+            {
+                border: 10px #2196f3 solid;
+                width: 220px;
+                height: 220px;
+                border-color: #2196f3 white #2196f3 #2196f3;
+            }
+
+            .container .elzero
+            {
+                width: 200px;
+                height: 200px;
+                background-color: #eee;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: solid 1px rgb(218, 217, 217);
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box_2"></div>
+            <div class="box_1"></div>
+            <div class="elzero">Elzero</div>
+        </div>
+    </body>
+</html>
