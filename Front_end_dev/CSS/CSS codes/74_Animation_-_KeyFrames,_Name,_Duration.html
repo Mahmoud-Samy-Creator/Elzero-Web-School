@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <title>Lesson 74</title>
+        <style>
+            div
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 200px;
+                height: 200px;
+                background-color: #C51162;
+                color: white;
+                font-size: large;
+                font-weight: bold;
+
+                /* Animation */
+                animation-name: animation-colors;
+                animation-duration: 6s
+            }
+
+            @keyframes animation-colors
+            {
+                0% 
+                {
+                    background-color: #C51162;
+                }
+                
+                50%
+                {
+                    background-color: #2196F3;
+                }
+                
+                100%
+                {
+                    background-color: #C51162;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>Animation</div>
+    </body>
+</html>
