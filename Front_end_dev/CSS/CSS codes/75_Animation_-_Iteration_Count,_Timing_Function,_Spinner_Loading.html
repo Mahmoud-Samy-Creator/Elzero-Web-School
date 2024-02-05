@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lesson 75</title>
+        <style>
+            .one
+            {
+                width: 100px;
+                height: 100px;
+                background-color: #eee;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin: -50px;
+                border-radius: 50%;
+                border: solid 5px rgb(18, 123, 155);
+                border-left-color: transparent;
+                animation-name: spin_1;
+                animation-duration: 1.6s;
+                animation-iteration-count: infinite;
+            }
+
+            .two
+            {
+                width: 70px;
+                height: 70px;
+                background-color: #eee;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin: -35px;
+                border-radius: 50%;
+                border: solid 5px #C62828;
+                border-left-color: transparent;
+                animation-name: spin_2;
+                transform: rotate(180deg);
+                animation-duration: 1.6s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes spin_1
+            {
+                to
+                {
+                    transform: rotate(-1turn);
+                }
+            }
+
+            @keyframes spin_2
+            {
+                to
+                {
+                    transform: rotate(calc(180deg * 3));
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="one"></div>
+        <div class="two"></div>
+    </body>
+</html>
