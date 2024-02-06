@@ -1,0 +1,21 @@
+/*
+  CSS Selectors
+  - *
+  - Element => [p, div, h2]
+  - Element OtherElement => div p
+  - .class-name
+  - #id-name
+  - .parent .child
+  - .class-one.class-two --> 2 classes for same element
+  - .class-name div, .class-name p --> Grouping
+  - Element.class-name => p.class-name --> Class name but for specific element
+  - .parent > .child => Direct Child
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
