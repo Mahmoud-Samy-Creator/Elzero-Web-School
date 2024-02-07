@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" \>
+        <title>Assignment 1</title>
+        <style>
+            /* 
+            Colors:
+            1- #ea1b67 --> div
+            2- #2197f2 --> div:after
+            3- #fe5622 --> div: before
+            */
+            * {
+                box-sizing: border-box;
+                margin: 0
+            }
+
+            body {
+                height: 100vh;
+                background-color: #eee;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div {
+                width: 200px;
+                height: 200px;
+                margin-top: 100px;
+                border-radius: 50%;
+                border: 12px solid #ea1b67;
+                border-left-color: transparent;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* Animation */
+                /* animation-name: spin;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear; */
+
+                /* Animation short hand */
+                animation: spin 0.7s infinite linear;
+            }
+            
+            div:hover {
+                animation-play-state: paused;
+            }
+
+            div:after {
+                content: "";
+                position: absolute;
+                width: 212px;
+                height: 212px;
+                border-radius: 50%;
+                border: 12px solid #2197f2;
+                border-right-color: transparent;
+
+            }
+            
+            div::before {
+                content: "";
+                position: absolute;
+                width: 248px;
+                height: 248px;
+                border-radius: 50%;
+                border: 12px solid #fe5622;
+                border-top-color: transparent;
+            }
+
+            @keyframes spin {
+                to {
+                    transform: rotate(1turn)
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
