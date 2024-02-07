@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" \>
+        <title>Assignment 3</title>
+        <style>
+            /* 
+            Colors:
+            1- Black --> div
+            */
+            * {
+                box-sizing: border-box;
+                margin: 0
+            }
+
+            body {
+                height: 100vh;
+                background-color: #eee;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div {
+                width: 100px;
+                height: 100px;
+                margin-top: 100px;
+                border-radius: 50%;
+                position: absolute;
+                border: 10px black solid;
+                border-bottom-color: transparent;
+                animation: spin 0.8s linear infinite reverse;
+            }
+
+            @keyframes spin {
+                to {
+                    transform: rotate(1turn)
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
