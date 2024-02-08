@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0
+            }
+
+            body {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap
+            }
+
+            div {
+                background-color: #eee;
+                border: 1px solid gray;
+                padding: 10px;
+                text-align: center;
+                margin: 10px;
+                transition-duration: 0.5s;
+            }
+
+            @media (max-width: 760px) {
+                /* For mobile */
+                div {
+                    width: 100%
+                }
+            }
+
+            /* Meduim screen */
+            @media (min-width: 761px) and (max-width: 999px) {
+                div {
+                    width: calc(calc(100% / 3) - 20px);
+                }
+
+                div:nth-of-type(1) {
+                    width: 100%;
+                }
+
+                div b {
+                    color: red
+                }
+            }
+
+            /* big screen */
+            @media (min-width: 1000px) {
+                div {
+                    width: calc(calc(100% / 2) - 20px);
+                }
+
+                div:nth-of-type(1),
+                div:nth-of-type(4) {
+                    width: 100%;
+                }
+
+                div b {
+                    color: rgb(13, 125, 94)
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <b>Product One</b>
+            <p>This is a product</p>
+        </div>
+
+        <div>
+            <b>Product Two</b>
+            <p>This is a product</p>
+        </div>
+
+        <div>
+            <b>Product Three</b>
+            <p>This is a product</p>
+        </div>
+
+        <div>
+            <b>Product Four</b>
+            <p>This is a product</p>
+        </div>
+
+    </body>
+</html>
