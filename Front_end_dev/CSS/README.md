@@ -335,3 +335,14 @@
 88. The End And How To Master CSS  
 [`video`](https://www.youtube.com/watch?v=YKUkssSbVls) - [`code`](https://github.com/Mahmoud-Samy-Creator/Elzero-Web-School/blob/main/Front_end_dev/CSS/CSS%20codes/88_The_End_And_How_To_Master_CSS.html)
 
+### Reference
+1. [CSS Reference](https://cssreference.io/)
+2. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+3. [CSS Properties](https://htmldog.com/references/css/properties/)
+4. [W3schools](https://www.w3schools.com/cssref/default.asp)
+
+### Tools
+1. [Gradient Generator](https://cssgradient.io/)
+2. [Separator Generator](https://wweb.dev/resources/css-separator-generator/)
+3. [Animista](https://animista.net/)
+4. [Animation Generator](https://webcode.tools/generators/css/keyframe-animation)
