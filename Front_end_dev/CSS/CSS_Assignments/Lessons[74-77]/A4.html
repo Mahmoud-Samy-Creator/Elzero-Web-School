@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Assignment 4</title>
+        <style>
+            /* 
+            Colors Used: 
+            1- #323335 --> EL
+            2- #ff9800 --> Animation abject
+
+            Algorithm
+            1- Make EL
+            2- Make 2 animaition objects
+            3- Animation object movement
+            */
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+            }
+
+            body {
+                background-color: #eee;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            body > div {
+                width: 40%;
+                height: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 900px;
+                font-weight:bolder;
+                font-family: 'Roboto', sans-serif;
+                color: #323335;
+                position: relative;
+            }
+
+            body > div:after {
+                content: "";
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                background-color: #ff9800;
+                transform: translate(-80px, -257px);
+                animation: move_1 5s linear infinite;
+            }
+            
+            body > div:before {
+                content: "";
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                background-color: #ff9800;
+                transform: translate(497px, 262px);
+                visibility: hidden;
+                animation: move_2 2s linear 5s infinite;
+            }
+
+            @keyframes move_1 {
+                0% {
+                }
+
+                10% {
+                    transform: translate(-455px, -257px);
+                }
+
+                20% {
+                    transform: translate(-455px, 0px);
+                }
+                
+                30% {
+                    transform: translate(-107px, 0px);
+                }
+                
+                40% {
+                    transform: translate(-455px, 0px);
+                }
+
+                50% {
+                    transform: translate(-455px, 263px);
+                }
+
+                60% {
+                    transform: translate(-60px, 263px);
+                }
+
+                70% {
+                    transform: translate(-455px, 263px);
+                }
+
+                80% {
+                    transform: translate(-455px, 0px);;
+                }
+
+                90% {
+                    transform: translate(-455px, -257px);
+                }
+
+                100% {
+                    transform: translate(-80px, -257px);
+                }
+            }
+
+            @keyframes move_2 {
+                0% {
+                    visibility: visible;
+                }
+
+                30% {
+                    transform: translate(150px, 262px);
+                    opacity: 1;
+                }
+
+                50% {
+                    transform: translate(150px, -250px);
+                    opacity: 1;
+                }
+
+                70% {
+                    transform: translate(150px, -250px);
+                    opacity: 1;
+                }
+
+                80% {
+                    transform: translate(150px, -250px);
+                    opacity: 1;
+                }
+
+                90% {
+                    transform: translate(150px, -250px);
+                    opacity: 1;
+                }
+
+                100% {
+                    transform: translate(150px, -250px);
+                    opacity: 0.1;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>E</div>
+            <div>L</div>
+        </div>
+    </body>
+</html>
