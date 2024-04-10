@@ -1,32 +1,30 @@
 /*
-  Template Literals (Template Strings)
+  Arithmetic Operators
+  + Addition
+  - Subtraction
+  * Multiplication
+  / Division
+  ** Exponentiation (ES7)
+  % Modulus (Division Remainder)
+  ++ Increment [ Post / Pre ]
+  -- Decrement [ Post / Pre ]
 */
 
-// First Example
+console.log(10 + 20);
+console.log(10 + "Osama");
 
-let a = "We Love";
-let b = "JavaScript";
-let c = "And";
-let d = "Programming";
+console.log(10 - 20);
+console.log(10 - "Osama"); // NaN
+console.log(typeof NaN);
 
-console.log(a = " \"\" " + b +
-"\n" + c + " " + d);
+console.log(10 * 20);
+console.log(10 * -20);
 
-console.log(`${a} "" '' \\ ${b}
-${c} ${d}`);
+console.log(20 / 5);
+console.log(20 / 3);
 
-// Second Example
+console.log(2 ** 4);
+console.log(2 * 2 * 2 * 2);
 
-let title = "Elzero";
-let desc = "Elzero Web School";
-
-let markup = `
-  <div class="card">
-    <div class="child">
-      <h2>${title}</h2>
-      <p>${desc}</p>
-    </div>
-  </div>
-`;
-
-document.write(markup);
+console.log(10 % 2);
+console.log(11 % 2); // Remove 1
