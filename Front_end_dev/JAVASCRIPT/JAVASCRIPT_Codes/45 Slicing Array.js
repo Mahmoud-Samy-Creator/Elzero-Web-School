@@ -11,15 +11,14 @@
 */
 
 let myFriends = ["Ahmed", "Sayed", "Ali", "Osama", "Gamal", "Ameer"];
-console.log(myFriends);
-console.log(myFriends.slice());
-console.log(myFriends.slice(1));
-console.log(myFriends.slice(1, 3));
-console.log(myFriends.slice(-3));
-console.log(myFriends.slice(1, -2));
-console.log(myFriends.slice(-4, -2));
-console.log(myFriends);
+// console.log(myFriends);
+// console.log(myFriends.slice());
+// console.log(myFriends.slice(1));
+// console.log(myFriends.slice(1, 3));
+// console.log(myFriends.slice(-3));
+// console.log(myFriends.slice(1, -2));
+// console.log(myFriends.slice(-4, -2));
+// console.log(myFriends);
 
 myFriends.splice(1, 2, "Sameer", "Samara");
-
 console.log(myFriends);
