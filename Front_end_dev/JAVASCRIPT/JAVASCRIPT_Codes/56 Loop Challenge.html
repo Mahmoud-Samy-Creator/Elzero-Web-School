@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body></body>
+<script>
+
+  let myAdmins = ["Ahmed", "Osama", "Sayed", "Stop", "Samera"];
+  let myEmployees = ["Amgad", "Samah", "Ameer", "Omar", "Othman", "Amany", "Samia", "Anwar"];
+  let noOfAdmins = 0;
+  
+  for (noOfAdmins = 0; noOfAdmins < myAdmins.length && myAdmins[noOfAdmins] != 'Stop'; noOfAdmins++) {}
+
+  document.write(`<div>We Have ${noOfAdmins} Admins</div>`);
+  document.write(`<hr>`)
+  document.write(`<hr>`)
+  document.write(`<br>`)
+  document.write(`<br>`)
+
+  for (let i = 0; i < myAdmins.length; i++) {
+    if (myAdmins[i] === 'Stop') break
+    document.write(`<div>The Admin for Team ${i+1} is ${myAdmins[i]}</div>`)
+    document.write(`<h1>Team Members</h1>`)
+    for (let j = 0 ; j < myEmployees.length ; j++) {
+      if (myEmployees[j][0] === myAdmins[i][0]) document.write(`- ${myEmployees[j]} <br> <br>`) 
+    }
+  document.write(`<hr>`)
+  }
+
+
+</script>
+</html>
