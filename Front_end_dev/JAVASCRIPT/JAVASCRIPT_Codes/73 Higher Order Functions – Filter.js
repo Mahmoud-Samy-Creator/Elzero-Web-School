@@ -10,7 +10,7 @@ Syntax filter(callBackFunction(Element, Index, Array) { }, thisArg)
 */
 
 // Get Friends With Name Starts With A
-let friends = ["Ahmed", "Sameh", "Sayed", "Asmaa", "Amgad", "Israa"];
+let friends = ["Ahmed", "Sameh", "Sayed", "Asmaa", "Amgad", "Israa"];س
 let A_Friends = friends.filter(ele => ele.startsWith('A'))
 
 console.log(A_Friends)
