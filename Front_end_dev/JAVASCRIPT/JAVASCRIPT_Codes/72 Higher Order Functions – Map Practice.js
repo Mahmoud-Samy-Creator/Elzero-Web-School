@@ -23,3 +23,4 @@ let letters = ignoreNumbers
             .map(function (ele) {
                 return isNaN(parseInt(ele)) ? ele : "";
             })
+            join("")
