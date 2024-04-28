@@ -1,6 +1,6 @@
 /*
-  Object
-  - Create Object With Assign Method
+    Object
+    - Create Object With Assign Method
 */
 
 // Normal method
