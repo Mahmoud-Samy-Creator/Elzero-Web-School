@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Learn JavaScript</title>
+		<script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let element = document.getElementsByTagName("a")
+                for (obj of element) {
+                    if (obj.classList.contains("open") && obj.textContent === "Elzero") {
+                        console.log(obj)
+                        console.log()
+                    }
+                }
+            })
+		</script>
+	</head>
+	<body>
+		<a class="open" href="https://google.com">Google</a>
+		<a class="open" href="https://elzero.org">Elzero</a>
+		<a class="not" href="https://facebook.com">Facebook</a>
+		<a class="linked" href="https://linkedin.com">Elzero</a>
+	</body>
+</html>
