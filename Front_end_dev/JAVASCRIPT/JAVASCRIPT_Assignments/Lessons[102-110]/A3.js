@@ -1,9 +1,8 @@
 let counterDiv = document.querySelector("div")
 
-let counter = setInterval(()=>{
-    if (counterDiv.innterHTML === "0") {
-        clearInterval(count)
-    } else {
-        counterDiv.innerHTML -= 1
+let counter = setInterval(() => {
+    counterDiv.innerHTML -= 1
+    if (counterDiv.innerHTML === "0") {
+        clearInterval(counter)
     }
 }, 1000)
