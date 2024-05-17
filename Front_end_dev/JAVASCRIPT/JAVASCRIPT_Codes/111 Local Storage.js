@@ -33,8 +33,8 @@ document.body.style.backgroundColor = window.localStorage["color"]
 // removing an item => using key
 window.localStorage.removeItem("color")
 
-// clear all
-// window.localStorage.clear()
 
 // key => behave like index
 console.log(window.localStorage.key(0))
+// clear all
+window.localStorage.clear()
