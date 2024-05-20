@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1</title>
+    <!-- Open Sans fonts -> font-family: "Open Sans", sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Cairo fonts -> font-family: "Cairo", sans-serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Roboto ->  font-family: "Roboto", sans-serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <label for="fonts">Choose Fonts:</label>
+    <select name="fonts" id="fonts">
+        <option value="Open Sans">Open</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Roboto">Roboto</option>
+    </select>
+
+    <label for="colors">Choose color:</label>
+    <select name="colors" id="colors">
+        <option value="#DC143C">Crimson</option>
+        <option value="#FF1493">DeepPink</option>
+        <option value="#FF4500">OrangeRed</option>
+        <option value="#EE82EE">Violet</option>
+        <option value="#8B008B">DarkMagenta</option>
+        <option value="#32CD32">LimeGreen</option>
+    </select>
+
+    <label for="font-size">Choose font-size: </label>
+    <select name="font-size" id="font-size">
+        <option value="16px">16 px</option>
+        <option value="18px">18 px</option>
+        <option value="20px">20 px</option>
+        <option value="22px">22 px</option>
+        <option value="24px">24 px</option>
+        <option value="26px">26 px</option>
+        <option value="28px">28 px</option>
+        <option value="30px">30 px</option>
+        <option value="32px">32 px</option>
+        <option value="34px">34 px</option>
+        <option value="36px">36 px</option>
+    </select>
+    <!-- paragraph -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Facilis aut minima laborum? Quam quaerat ullam veniam optio quisquam,
+        quo veritatis ea quas alias repellat officia sunt a laborum autem. Commodi!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Facilis aut minima laborum? Quam quaerat ullam veniam optio quisquam,
+        quo veritatis ea quas alias repellat officia sunt a laborum autem. Commodi!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Facilis aut minima laborum? Quam quaerat ullam veniam optio quisquam,
+        quo veritatis ea quas alias repellat officia sunt a laborum autem. Commodi!
+    </p>
+</body>
+<script>
+    // window.localStorage.clear()
+    let ps = document.querySelectorAll("p")
+    let font = document.querySelector("#fonts")
+    let color = document.querySelector("#colors")
+    let fontSize = document.querySelector("#font-size")
+
+    if (window.localStorage.fontFamily) {
+        ps.forEach((p) => {
+            p.style.fontFamily = `${window.localStorage.fontFamily}`
+    })
+    }
+
+    if (window.localStorage.fontColor) {
+        ps.forEach((p) => {
+            p.style.color = `${window.localStorage.fontColor}`
+    })
+    }
+
+    if (window.localStorage.fontSize) {
+        ps.forEach((p) => {
+            p.style.fontSize = `${window.localStorage.fontSize}`
+    })
+    }
+
+    font.addEventListener("change", (e) => {
+        console.log(e.currentTarget.value)
+        window.localStorage.fontFamily = e.currentTarget.value
+        ps.forEach((p) => {
+            p.style.fontFamily = `${e.currentTarget.value}`
+        })
+    })
+
+    color.addEventListener("change", (e) => {
+        console.log(e.currentTarget.value)
+        window.localStorage.fontColor = e.currentTarget.value
+        ps.forEach((p) => {
+            p.style.color = `${e.currentTarget.value}`
+        })
+    })
+
+    fontSize.addEventListener("change", (e) => {
+        console.log(e.currentTarget.value)
+        window.localStorage.fontSize = e.currentTarget.value
+        ps.forEach((p) => {
+            p.style.fontSize = `${e.currentTarget.value}`
+        })
+    })
+</script>
+</html>
