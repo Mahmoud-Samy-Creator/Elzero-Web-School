@@ -69,27 +69,57 @@
 </body>
 <script>
     // window.localStorage.clear()
+    // Pargraph to be edited
     let ps = document.querySelectorAll("p")
+
+    // Selection boxes
     let font = document.querySelector("#fonts")
     let color = document.querySelector("#colors")
     let fontSize = document.querySelector("#font-size")
+    
+    // Selection boxex options
+    let fontOptions = document.querySelectorAll("#fonts option")
+    let colorOptions = document.querySelectorAll("#colors option")
+    let fontSizeOptions = document.querySelectorAll("#font-size option")
+
+    fontOptions.forEach((op) => {
+        console.log(op.value)
+    })
 
     if (window.localStorage.fontFamily) {
         ps.forEach((p) => {
             p.style.fontFamily = `${window.localStorage.fontFamily}`
-    })
+        })
+
+        fontOptions.forEach((option) => {
+            if (option.value === window.localStorage.fontFamily) {
+                option.setAttribute("selected", "")
+            }
+        })
     }
 
     if (window.localStorage.fontColor) {
         ps.forEach((p) => {
             p.style.color = `${window.localStorage.fontColor}`
-    })
+        })
+
+        colorOptions.forEach((option) => {
+            if (option.value === window.localStorage.fontColor) {
+                option.setAttribute("selected", "")
+            }
+        })
     }
 
     if (window.localStorage.fontSize) {
         ps.forEach((p) => {
             p.style.fontSize = `${window.localStorage.fontSize}`
-    })
+        })
+
+        fontSizeOptions.forEach((option) => {
+            if (option.value === window.localStorage.fontSize) {
+                option.setAttribute("selected", "")
+            }
+        })
     }
 
     font.addEventListener("change", (e) => {
