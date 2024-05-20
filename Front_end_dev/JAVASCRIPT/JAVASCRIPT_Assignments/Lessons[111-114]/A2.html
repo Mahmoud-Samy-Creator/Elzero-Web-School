@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            text-align: center;
+            background-color: #eee;
+            border: 0.5px solid black;
+            border-radius: 30px;
+            margin-top: 200px;
+        }
+        form input {
+            width: 400px;
+            height: 30px;
+            outline: none;
+            border: 0.4px solid gray;
+            border-radius: 10px;
+        }
+        form select {
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            border: 0.3px solid #ddd;
+            background-color: #b2ddff;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        ul {
+            text-decoration: none;
+            list-style-type: none;
+        }
+        ul li {
+            margin: 50px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <ul>
+            <li>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name">
+            </li>
+            <li>
+                <label for="last-name">last Name:</label>
+                <input type="text" id="last-name">
+            </li>
+            <li>
+                <label for="user-email">User Email:</label>
+                <input type="email" id="user-email">
+            </li>
+            <li>
+                <select name="level" id="level">
+                    <option value="freshmen">freshmen</option>
+                    <option value="sophomore">sophomore</option>
+                    <option value="junior">junior</option>
+                    <option value="senior(1)">senior(1)</option>
+                    <option value="senior(2)">senior(2)</option>
+                </select>
+            </li>
+        </ul>
+    </form>
+    <script>
+        let firstName = document.querySelector("#first-name")
+        let lastName = document.querySelector("#last-name")
+        let email = document.querySelector("#user-email")
+        let level = document.querySelector("#level")
+
+
+        if (window.sessionStorage.firstName) {
+            firstName.value = window.sessionStorage.firstName
+        }
+        if (window.sessionStorage.lastName) {
+            lastName.value = window.sessionStorage.lastName
+        }
+        if (window.sessionStorage.email) {
+            email.value = window.sessionStorage.email
+        }
+        if (window.sessionStorage.level) {
+            email.level = window.sessionStorage.level
+        }
+
+        firstName.addEventListener("blur", () => {
+            window.sessionStorage.firstName = firstName.value
+            console.log(firstName.value)
+        })
+        lastName.addEventListener("blur", () => {
+            window.sessionStorage.lastName = lastName.value
+            console.log(lastName.value)
+        })
+        email.addEventListener("blur", () => {
+            window.sessionStorage.email = email.value
+            console.log(email.value)
+        })
+        level.addEventListener("blur", () => {
+            window.sessionStorage.level = level.value
+            console.log(level.value)
+        })
+
+    </script>
+</body>
+</html>
