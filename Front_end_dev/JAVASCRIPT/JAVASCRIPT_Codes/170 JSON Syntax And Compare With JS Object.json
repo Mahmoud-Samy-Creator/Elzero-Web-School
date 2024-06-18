@@ -1,0 +1,11 @@
+{
+    "string": "Elzero",
+    "number": 100,
+    "object": {
+        "EG": "Cairo",
+        "KSA": "Riyadh"
+    },
+    "array": ["HTML", "CSS", "JS"],
+    "boolean": true,
+    "null": null
+}
