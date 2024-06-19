@@ -8,6 +8,7 @@
 
 1. [HTML](https://github.com/Mahmoud-Samy-Creator/Elzero-Web-School/tree/main/Front_end_dev/HTML)
 2. [CSS](https://github.com/Mahmoud-Samy-Creator/Elzero-Web-School/tree/main/Front_end_dev/CSS)
+3. [JavaScript](https://github.com/Mahmoud-Samy-Creator/Elzero-Web-School/tree/main/Front_end_dev/JAVASCRIPT)
 
 
 ### Referances
@@ -23,6 +24,10 @@
 2. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 3. [CSS Properties](https://htmldog.com/references/css/properties/)
 4. [W3schools](https://www.w3schools.com/cssref/default.asp)
+
+#### JavaScript
+1. [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+2. [Dev Docs](https://devdocs.io/javascript/)
 
 ### Tools
 #### CSS
