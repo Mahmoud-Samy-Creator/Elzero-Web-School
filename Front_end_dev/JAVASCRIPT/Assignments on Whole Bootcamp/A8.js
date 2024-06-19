@@ -1,16 +1,16 @@
-function swapEveryTwoChars(word) {
-    let str = word.split("");
+function findTheClosest(nums, goal) {
+    let diffs = [];
 
-    for (let i = 0 ; i < str.length ; i += 2) {
-        if (str[i] === str[i].toLowerCase()) {
-            str[i] = str[i].toUpperCase();
-        } else {
-            str[i] = str[i].toLowerCase();
-        }
+    for (let num of nums) {
+        diffs.push(goal - num);
     }
 
-    return str.join("")
+    return nums[diffs.indexOf(Math.min(...diffs))];
 }
 
-console.log(swapEveryTwoChars("elZeRo")); // Elzero
-console.log(swapEveryTwoChars("heLlO")); // Hello
+let nums = [10, 80, 85, 25, 30, 88, 15];
+let goal = 100;
+
+console.log(findTheClosest(nums, goal));
+
+// Closest Number Is 88
