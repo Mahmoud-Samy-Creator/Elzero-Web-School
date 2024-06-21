@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        width: 800px;
+        margin: 20px auto;
+        background-color: #fdfdfd;
+        text-align: center;
+    }
+    table td {
+        padding: 15px;
+        border: 1px solid #ccc;
+    }
+</style>
+
+<body>
+<div class="result">
+    <table>
+        <tbody>
+            <tr>
+                <td>Repository Name</td>
+                <td>Stars</td>
+                <td>Visit Link</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    <script>
+        // Fetch the url, so get the response, the response is the result
+        fetch("https://api.github.com/users/ElzeroWebSchool/repos")
+        .then((result) => {
+            // Extract the objects from the result
+            let myData = result.json();
+            // Returning the data to the then as a promise
+            return myData;
+        }).then((myData) => {
+            myData.length = 15;
+            return myData;
+        }).then((myData) => {
+            let tableBody = document.querySelector("tbody");
+            console.log(myData[0]);
+            for (let i = 0 ; i < 15 ; i++) {
+                let tableRow = document.createElement("tr");
+
+                // Create table rows
+                let name = document.createElement("td");
+                let stars = document.createElement("td");
+                let visit = document.createElement("td");
+
+                // Create table discriptions
+                // Create names
+                let nameStr = document.createTextNode(myData[i].name);
+                name.appendChild(nameStr);
+                tableRow.appendChild(name);
+
+                // Create Stars
+                let starStr = document.createTextNode(myData[i].stargazers_count);
+                stars.appendChild(starStr);
+                tableRow.appendChild(stars);
+
+                // Create Visit Links
+
+                let visitDisc = document.createElement("a");
+                visitDisc.appendChild(document.createTextNode("visit"));
+                visitDisc.setAttribute("href", myData[i].html_url);
+                visitDisc.setAttribute("target", "_blank");
+                visit.appendChild(visitDisc);
+                tableRow.appendChild(visit);
+
+                // Adding elements to the table
+                tableBody.appendChild(tableRow);
+            }
+        })
+    </script>
+</body>
+</html>
