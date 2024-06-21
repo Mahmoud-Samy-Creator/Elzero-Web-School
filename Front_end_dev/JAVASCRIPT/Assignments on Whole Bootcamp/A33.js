@@ -1,0 +1,1 @@
+console.log("%cElzero Web School", "color: white; background-color: blue; padding: 20px 10px; font-weight: bold");
