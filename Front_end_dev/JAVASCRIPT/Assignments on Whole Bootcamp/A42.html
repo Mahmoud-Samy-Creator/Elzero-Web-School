@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A42</title>
+</head>
+<body>
+    <script>
+        // Function to handle keydown events
+        function handleKeyDown(event) {
+            // Check if Ctrl, Alt, and Shift are pressed simultaneously
+            if (event.ctrlKey && event.altKey && event.shiftKey) {
+                console.log("You Pressed Ctrl + Alt + Shift");
+                // Replace console.log with any action you want to perform
+            }
+        }
+
+        // Attach keydown event listener to the document
+        document.addEventListener("keydown", handleKeyDown);
+
+    </script>
+</body>
+</html>
