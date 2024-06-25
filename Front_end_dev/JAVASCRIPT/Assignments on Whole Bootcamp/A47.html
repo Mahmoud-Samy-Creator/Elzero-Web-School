@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A 47</title>
+</head>
+<body>
+    <div class="form">
+        <div>Enter Your Text</div>
+        <textarea placeholder="Enter Text..."></textarea>
+        <button>Save To File</button>
+    </div>
+    <script>
+        let textarea = document.querySelector("textarea");
+        let save = document.querySelector("button");
+
+        save.addEventListener("click", function () {
+            let value = textarea.value;
+
+            // Create Blob object from the text
+            let blob = new Blob([value], { type: "text/plain"});
+
+            // Create link element
+            let link = document.createElement("a");
+
+            // Set the download / href attributes
+            link.download = "Text.txt";
+            link.href = URL.createObjectURL(blob);
+
+            link.click();
+
+        })
+    </script>
+</body>
+</html>
+
+
