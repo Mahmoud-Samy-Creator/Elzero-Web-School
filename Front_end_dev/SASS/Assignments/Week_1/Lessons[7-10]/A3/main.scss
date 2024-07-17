@@ -1,0 +1,19 @@
+// SASS Code
+// $number: 10;
+$number: 8;
+// $number: 5;
+
+// Larger Than 8
+@if $number > 8 {
+    .class {
+        color: blue;
+    }
+} @else if $number > 5 {
+    .class {
+        color: green;
+    }
+} @else {
+    .class {
+        color: red;
+    }
+}
