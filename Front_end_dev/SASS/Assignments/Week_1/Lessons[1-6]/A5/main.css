@@ -1,0 +1,13 @@
+.widget, .my-class, .main-border {
+  background-color: white;
+  padding: 20px;
+}
+
+.main-border {
+  border: 1px solid #CCC;
+}
+
+.my-class {
+  font-weight: bold;
+  margin: 20px auto;
+}/*# sourceMappingURL=main.css.map */
