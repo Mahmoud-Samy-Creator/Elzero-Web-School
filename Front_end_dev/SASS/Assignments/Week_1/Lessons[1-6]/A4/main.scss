@@ -1,0 +1,13 @@
+// This is the main parent
+.parent {
+    // This is the only sibling (Element next to the parent)
+    &+.sibling {
+        margin: auto;
+        margin-top: 10px;
+
+        &~.last {
+            padding: 10px;
+        }
+    }
+
+}
