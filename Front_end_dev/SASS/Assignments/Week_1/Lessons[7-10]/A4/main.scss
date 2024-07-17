@@ -1,0 +1,9 @@
+$number: 10;
+$color: red;
+$theme: light;
+
+.class {
+    @if $number > 5 & $color == 'red' & $theme != 'dark' {
+        color: $color;
+    }
+}
