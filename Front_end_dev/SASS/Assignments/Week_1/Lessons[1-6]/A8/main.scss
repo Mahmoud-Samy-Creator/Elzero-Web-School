@@ -1,0 +1,11 @@
+$red: #e91e63;
+$green: #009688;
+$link-color: #009688;
+$link-hover: #e91e63;
+
+.box a {
+    color: $link-color;
+    &:hover {
+        color: $link-hover;
+    }
+}
