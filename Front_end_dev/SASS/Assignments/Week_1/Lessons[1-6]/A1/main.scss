@@ -1,0 +1,22 @@
+$paddingSize: 15px;
+$fontSize: 18px;
+
+.content {
+    > .box {
+        padding: $paddingSize;
+        > .title {
+            font: {
+                size: $fontSize;
+            };
+        }
+    }
+    .cat {
+        padding: $paddingSize;
+    }
+    &.premuim:before {
+        content: "Premium Box";
+    }
+    &.premuim:hover {
+        background-color: #eee;
+    }
+}

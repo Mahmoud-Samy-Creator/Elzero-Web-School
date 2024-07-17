@@ -1,0 +1,15 @@
+.content > .box {
+  padding: 15px;
+}
+.content > .box > .title {
+  font-size: 18px;
+}
+.content .cat {
+  padding: 15px;
+}
+.content.premuim:before {
+  content: "Premium Box";
+}
+.content.premuim:hover {
+  background-color: #eee;
+}/*# sourceMappingURL=main.css.map */
