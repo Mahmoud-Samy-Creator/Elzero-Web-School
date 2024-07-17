@@ -1,0 +1,17 @@
+// SASS Code
+$number: 10;
+// $number: 9;
+// $number: 8;
+
+// Output
+
+.box {
+    @if $number > 9 {
+        background-color: #EEE;
+        text-align: center;
+    } @else if $number > 8 {
+        background-color: #EEE;
+    } @else {
+
+    }
+}
