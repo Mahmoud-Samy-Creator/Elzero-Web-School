@@ -1,0 +1,10 @@
+textarea.placeholder {
+  color: #777;
+}
+
+textarea:-moz-placeholder,
+textarea:-webkit-placeholder,
+textarea:-ms-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #777;
+}/*# sourceMappingURL=A6.css.map */
