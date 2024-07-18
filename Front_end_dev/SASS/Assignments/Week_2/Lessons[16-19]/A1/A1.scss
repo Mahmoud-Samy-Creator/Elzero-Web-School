@@ -1,0 +1,17 @@
+$num: 2;
+$start: 100;
+$multiply: 1;
+
+@function double($size) {
+  @return $size * $num;
+}
+
+
+@for $i from 1 through 5 {
+    .box-#{$start} {
+        width: #{$start}px;
+        height: double($start) * 1px;
+    }
+    $multiply: double($multiply);
+    $start: 100 * $multiply
+}
