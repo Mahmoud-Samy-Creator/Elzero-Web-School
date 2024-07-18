@@ -1,0 +1,9 @@
+@for $init from 1 through 5 {
+    $mount: $init * 100px;
+    .circle-#{$mount} {
+        width: $mount;
+        height: $mount;
+        border-radius: $mount / 2;
+    }
+    $init: $init + 1;
+}
