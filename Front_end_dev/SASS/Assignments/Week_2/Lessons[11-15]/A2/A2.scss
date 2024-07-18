@@ -1,0 +1,8 @@
+$start: 6.25%;
+
+@for $i from 1 through 16 {
+    .col-#{$i} {
+        width: $start;
+    }
+    $start: $start + 6.25%;
+}
